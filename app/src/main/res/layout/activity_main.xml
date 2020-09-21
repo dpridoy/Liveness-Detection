@@ -6,11 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextureView
-        android:id="@+id/textureView2"
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_gravity="center"
-        />
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_flash="auto"
+        app:camera_facing="front"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera" />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/ic_camera"-->
+<!--        app:backgroundTint="@color/colorPrimaryDark"-->
+<!--        app:fabSize="normal"-->
+<!--        app:maxImageSize="40dp"/>-->
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture"/>
 
 </RelativeLayout>
