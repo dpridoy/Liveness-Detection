@@ -38,5 +38,6 @@ dependencies {
 
     //camera kit
     implementation 'com.wonderkiln:camerakit:0.13.1'
+
 }
 apply plugin: 'com.google.gms.google-services'
